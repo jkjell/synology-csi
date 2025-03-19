@@ -6,8 +6,6 @@ SOURCE_PATH="$(realpath "$(dirname "${SCRIPT_PATH}")"/../)"
 config_file="${SOURCE_PATH}/config/client-info.yml"
 plugin_dir="/var/lib/kubelet/plugins/$plugin_name"
 
-source "$SOURCE_PATH"/scripts/functions.sh
-
 # 1. Build
 csi_build(){
     echo "==== Build synology-csi .... ===="
